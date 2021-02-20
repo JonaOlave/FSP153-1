@@ -60,7 +60,9 @@
                             <td>{{asignatura.descripcion}}</td>
                             <td>{{asignatura.departamentos_id}}</td>
                             
-
+                            <td>
+                                <a href="{% url 'app_individual4m6:eliminar_asignatura' pk=asignatura.id %}" class="btn btn-dark">Borrar</a>
+                            </td>
 
                         </tr>
                         {% endfor %}
